@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เรซูเม่ - นราวิชญ์ ขิ่นโพธิ์</title>
+    <!-- นำเข้าฟอนต์ Sarabun เพื่อให้เหมือนเอกสารจริง -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        body {
+            background-color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .resume-container {
+            width: 100%;
+            max-width: 800px;
+            background: #ffffff;
+            display: flex;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            border-radius: 4px;
+            overflow: hidden;
+            min-height: 1000px;
+        }
+
+        /* --- คอลัมน์ซ้าย (สีฟ้าอ่อน) --- */
+        .left-column {
+            width: 38%;
+            background-color: #a8caff;
+            padding: 30px 20px;
+            color: #1a202c;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 170px;
+            object-fit: cover;
+            border: 2px solid #fff;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #0f172a;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            word-break: break-word;
+        }
+
+        .section-title-left {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0f172a;
+            border-bottom: 1.5px solid #0f172a;
+            padding-bottom: 2px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .about-text {
+            font-size: 13.5px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .skill-group {
+            margin-bottom: 12px;
+        }
+
+        .skill-title {
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding-left: 10px;
+            font-size: 13.5px;
+            line-height: 1.4;
+        }
+
+        .skill-list li::before {
+            content: "• ";
+            font-weight: bold;
+        }
+
+        .language-item {
+            font-size: 13.5px;
+            margin-bottom: 4px;
+            padding-left: 10px;
+        }
+
+        /* --- คอลัมน์ขวา (สีขาว) --- */
+        .right-column {
+            width: 62%;
+            background-color: #ffffff;
+            padding: 30px 25px;
+            color: #1e293b;
+        }
+
+        .section-title-right {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0f172a;
+            border-bottom: 2px solid #0f172a;
+            padding-bottom: 3px;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .institution-name, .company-name {
+            font-weight: 700;
+            font-size: 15px;
+            color: #0f172a;
+        }
+
+        .date {
+            font-size: 13px;
+            font-weight: 600;
+            color: #475569;
+            white-space: nowrap;
+        }
+
+        .sub-detail {
+            font-size: 13.5px;
+            color: #334155;
+            margin-top: 2px;
+        }
+
+        .grade {
+            font-size: 13.5px;
+            color: #334155;
+            margin-top: 1px;
+        }
+
+        .job-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 4px;
+        }
+
+        .job-details {
+            list-style: none;
+            padding-left: 12px;
+            font-size: 13.5px;
+            line-height: 1.5;
+        }
+
+        .job-details li::before {
+            content: "• ";
+            font-weight: bold;
+            margin-left: -10px;
+        }
+
+        /* Responsive สำหรับมือถือ */
+        @media (max-width: 650px) {
+            .resume-container {
+                flex-direction: column;
+            }
+            .left-column, .right-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+
+    <!-- ================= ฝั่งซ้าย ================= -->
+    <div class="left-column">
+        
+        <div class="profile-section">
+            <!-- ใส่รูปของคุณตรงนี้ -->
+            <img src="assets/img/my-profile-img.jpg" alt="นราวิชญ์ ปิ่นโพธิ์" class="profile-img">
+            <h1 class="name">นราวิชญ์ ขิ่นโพธิ์</h1>
+        </div>
+
+        <div class="contact-info">
+            <p>062-165-7894</p>
+            <p>narawich.ra@gmail.com</p>
+            <p>ถนนมหาชัย ต.ในเมือง อ.เมืองนครราชสีมา จ.นครราชสีมา</p>
+        </div>
+
+        <!-- เกี่ยวกับฉัน -->
+        <div class="section-title-left">เกี่ยวกับฉัน</div>
+        <p class="about-text">
+            นักศึกษาสาขาระบบสารสนเทศมีความสนใจงานด้านการออกแบบกราฟฟิก ตัดต่อวิดีโอ โปรแกรมเมอร์ สามารถทำงานร่วมกับผู้อื่นได้ดีและพร้อมเรียนรู้ทักษะใหม่ๆเพื่อทำงานที่ได้รับมอบหมายให้ดียิ่งขึ้น
+        </p>
+
+        <!-- ทักษะความสามารถ -->
+        <div class="section-title-left">ทักษะความสามารถ</div>
+        
+        <div class="skill-group">
+            <div class="skill-title">Video Editor</div>
+            <ul class="skill-list">
+                <li>Davinci Resolve</li>
+                <li>Capcut</li>
+                <li>Canva</li>
+            </ul>
+        </div>
+
+        <div class="skill-group">
+            <div class="skill-title">Graphic Design</div>
+            <ul class="skill-list">
+                <li>Canva</li>
+                <li>Adobe Photoshop</li>
+            </ul>
+        </div>
+
+        <div class="skill-group">
+            <div class="skill-title">Programing</div>
+            <ul class="skill-list">
+                <li>PHP</li>
+                <li>HTML</li>
+                <li>Css</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+
+        <div class="skill-group">
+            <div class="skill-title">Ux&ui Design</div>
+            <ul class="skill-list">
+                <li>Figma</li>
+            </ul>
+        </div>
+
+        <!-- ภาษา -->
+        <div class="section-title-left">ภาษา</div>
+        <div class="language-item">
+            <strong>• ภาษาไทย</strong> ดีมาก
+        </div>
+        <div class="language-item">
+            <strong>• อังกฤษ</strong> ดี
+        </div>
+
+    </div>
+
+    <!-- ================= ฝั่งขวา ================= -->
+    <div class="right-column">
+        
+        <!-- ประวัติการศึกษา -->
+        <div class="section-title-right">ประวัติการศึกษา</div>
+
+        <div class="timeline-item">
+            <div class="item-header">
+                <div class="institution-name">• วิทยาลัยเทคนิคบัวใหญ่</div>
+                <div class="date">2565</div>
+            </div>
+            <div class="sub-detail">สาขาคอมพิวเตอร์ธุรกิจ</div>
+            <div class="sub-detail">ระดับการศึกษา ประกาศนียบัตรวิชาชีพ (ปวช.)</div>
+            <div class="grade">เกรดเฉลี่ย 3.86</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="item-header">
+                <div class="institution-name">• วิทยาลัยเทคนิคบัวใหญ่</div>
+                <div class="date">2566-2568</div>
+            </div>
+            <div class="sub-detail">สาขาเทคโนโลยีธุรกิจดิจิทัล</div>
+            <div class="sub-detail">ระดับการศึกษา ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</div>
+            <div class="grade">เกรดเฉลี่ย 3.89</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="item-header">
+                <div class="institution-name">• มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน</div>
+                <div class="date">กำลังศึกษา</div>
+            </div>
+            <div class="sub-detail">สาขาระบบสารสนเทศ</div>
+            <div class="sub-detail">ระดับการศึกษา ปริญญาตรี</div>
+            <div class="grade">เกรดเฉลี่ย 3.81</div>
+        </div>
+
+        <!-- ประสบการณ์ทำงาน -->
+        <div class="section-title-right" style="margin-top: 30px;">ประวัติการทํางาน</div>
+
+        <div class="timeline-item">
+            <div class="item-header">
+                <div class="company-name">แอดไวซ์ ช็อป สาขา บัวใหญ่</div>
+                <div class="date">2565</div>
+            </div>
+            <div class="job-title">ตำแหน่ง: IT, Sales</div>
+            <ul class="job-details">
+                <li>ซ่อมอุปกรณ์คอมพิวเตอร์ โน็ตบุ๊ค เครื่องปริ้น ติดตั้งกล้องวงจรปิดตามบริษัท หรือที่บ้านของลูกค้า</li>
+                <li>ขายสินค้า IT แนะนำให้ข้อมูลแก่ลูกค้าชาวไทยและต่างชาติ</li>
+                <li>ทำใบเสนอราคา/ออกใบเสร็จ เช็คสต็อคประจำเดือน</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <div class="item-header">
+                <div class="company-name">บริษัท คิว เอ็ม บี จำกัด</div>
+                <div class="date">2567 - 2568</div>
+            </div>
+            <div class="job-title">ตำแหน่ง: Operator</div>
+            <ul class="job-details">
+                <li>ประกอบชิ้นส่วนอิเล็กทรอนิกส์ของโน็ตบุ๊ค ประสานงานกับเพื่อนร่วมงาน</li>
+                <li>ตรวจสอบคุณภาพของผลิตภัณฑ์</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
